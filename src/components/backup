@@ -1,0 +1,70 @@
+import React from 'react'
+import {FaArrowDown,FaArrowUp,FaRegFaceSmileBeam } from 'react-icons/fa'
+
+const Cards = () =>{
+  return (
+    <div className='mt-10 '>
+        <div className='font-bold'>More details of today's weather</div>
+        <div className='grid grid-cols-3'>
+   {/* card 1*/}
+   <div className='bg-white h-24 w-48 mt-8 rounded-3xl justify-center items-center text-center drop-shadow-md '>
+            <div className='flex justify-center items-center pt-4'>
+                <div><FaArrowDown/></div>
+                <div className='font-bold'>Min</div>
+            </div>
+            <div className='text-2xl mt-2 '>23 &deg;C</div>
+        </div>
+
+        {/* card 2 */}
+        <div className='bg-white h-24 w-48 mt-8 rounded-3xl justify-center items-center text-center drop-shadow-md'>
+            <div className='flex justify-center items-center pt-4'>
+                <div className='mr-1'><FaArrowUp/></div>
+                <div className='font-bold'>Pressure</div>
+            </div>
+            <div className='text-2xl mt-2 '>1023 hPa</div>
+        </div>
+
+        {/* card 3*/}
+        <div className='bg-white h-24 w-48 mt-8 rounded-3xl justify-center items-center text-center drop-shadow-md'>
+            <div className='flex justify-center items-center pt-4'>
+                <div><FaRegFaceSmileBeam/></div>
+                <div className='font-bold'>Feels Like</div>
+            </div>
+            <div className='text-2xl mt-2 '>25 &deg;C</div>
+        </div>
+
+        {/* card 4 */}
+        <div className='bg-white h-24 w-48 mt-8 rounded-3xl justify-center items-center text-center drop-shadow-md'>
+            <div className='flex justify-center items-center pt-4'>
+                <div className='mr-1'><FaArrowUp/></div>
+                <div className='font-bold'>Max</div>
+            </div>
+            <div className='text-2xl mt-2 '>23 &deg;C</div>
+        </div>
+
+        {/* card 5 */}
+        <div className='bg-white h-24 w-48 mt-8 rounded-3xl justify-center items-center text-center drop-shadow-md'>
+            <div className='flex justify-center items-center pt-4'>
+                <div><FaArrowDown/></div>
+                <div className='font-bold'>Humidity</div>
+            </div>
+            <div className='text-2xl mt-2 '>52 &#x25</div>
+        </div>
+
+        {/* card 2 */}
+        <div className='bg-white h-24 w-48 mt-8 rounded-3xl justify-center items-center text-center drop-shadow-md'>
+            <div className='flex justify-center items-center pt-4'>
+                <div className='mr-1'><FaArrowUp/></div>
+                <div className='font-bold'>Wind Speed</div>
+            </div>
+            <div className='text-2xl mt-2 '>3 m/s</div>
+        </div>
+        </div>
+     
+
+    </div>
+  )
+}
+
+
+export default Cards
